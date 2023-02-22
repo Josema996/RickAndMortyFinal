@@ -1,0 +1,63 @@
+$radius : 10px;
+
+.cards{
+    border: 2px solid #0b5ed7;
+    border-radius: 10px;
+}
+
+.img{
+    border-radius: $radius $radius 0 0;
+}
+
+
+.badge{
+    top: 35px;
+    right: 28px;
+    font-size: 13px;
+}
+
+/*-------------------------PRUEBAAAA----------------------------------*/
+
+@property --rotate{
+    syntax :"<angle>";
+    initial-value: 132 deg;
+    inherits: false;
+}
+:root{
+    --cards-height: 65vh;
+    --cards-width: calc(var(--cards-height) / 1.5);
+}
+
+body{
+    min-height: 100vh;
+    background:#212534;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+
+.cards {
+    margin: 30px;
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #11dd70 0%, #ccc5e2 100%);
+    border-radius: 20px;
+    transition: all 0.2s;
+    
+}
+.cards {
+    width: 190px;
+    height: 376px;
+    background-color: #0b0c0e;
+    transition: all 0.2s;
+}
+.cards:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+.cards:hover {
+    box-shadow: 0px 0px 40px 2px rgba(6, 204, 98, 0.3);
+}
